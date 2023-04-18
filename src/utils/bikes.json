@@ -1,0 +1,49 @@
+{
+  "bikes": [
+    {
+      "id": 1,
+      "type": "Eléctrica",
+      "name": "Modelo A"
+    },
+    {
+      "id": 2,
+      "type": "Eléctrica",
+      "name": "Modelo B"
+    },
+    {
+      "id": 3,
+      "type": "Eléctrica",
+      "name": "Modelo C"
+    },
+    {
+      "id": 4,
+      "type": "Normal",
+      "name": "Modelo X"
+    },
+    {
+      "id": 5,
+      "type": "Normal",
+      "name": "Modelo Y"
+    },
+    {
+      "id": 6,
+      "type": "Normal",
+      "name": "Modelo Z"
+    },
+    {
+      "id": 7,
+      "type": "Antigua",
+      "name": "Modelo I"
+    },
+    {
+      "id": 8,
+      "type": "Antigua",
+      "name": "Modelo II"
+    },
+    {
+      "id": 9,
+      "type": "Antigua",
+      "name": "Modelo III"
+    }
+  ]
+}
