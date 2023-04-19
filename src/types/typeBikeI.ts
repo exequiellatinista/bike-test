@@ -1,1 +1,0 @@
-export type TypeBikeI = 'Eléctrica' | 'Normal' | 'Antigua'

@@ -1,7 +1,8 @@
-import { TypeBikeI } from "./typeBikeI";
+import { BikeTypeI } from './BikeTypeT'
 
-export interface BikeI  {
-  id: number;
-  type: string;
-  name: string;
+export interface BikeI {
+  id: string
+  type: BikeTypeI | string
+  name: string
+  img: string
 }

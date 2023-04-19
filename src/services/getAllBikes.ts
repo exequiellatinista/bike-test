@@ -4,7 +4,7 @@ import bikes from '../utils/bikes.json'
 export const getAllBikes = (): Promise<BikeI[]> => {
   return new Promise<BikeI[]>((resolve, reject) => {
     setTimeout(() => {
-      resolve(bikes.bikes);
-    }, 1000);
-  });
+      resolve(bikes.list)
+    }, 1000)
+  })
 }

@@ -18,6 +18,11 @@
   -webkit-text-size-adjust: 100%;
 }
 
+p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
 a {
   font-weight: 500;
   color: #646cff;

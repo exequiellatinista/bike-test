@@ -1,30 +1,39 @@
-import React, { useEffect, useState } from "react"
-import { BikeI } from "../types/BikeI"
-import { getAllBikes } from "../services/getAllBikes"
+import { useEffect, useState } from 'react'
+import { BikeI } from '../types/BikeI'
+import { getAllBikes } from '../services/getAllBikes'
+import { useNavigate } from 'react-router'
+import { ROUTES } from '../utils/constants/routes'
+import { BikeCard } from '../components/Bike/BikeCard'
 export const Home = () => {
-
-  const [bikes, setBikes] = useState<BikeI[]>([]);
+  const [bikes, setBikes] = useState<BikeI[]>([])
   const [isLoading, setIsLoading] = useState(true)
+  const navigate = useNavigate()
+
+  const handleNavigation = (id: string) => {
+    navigate(`/${ROUTES.BIKE_FORM}/${id}`)
+  }
 
   useEffect(() => {
     const fetchData = async () => {
-      const data = await getAllBikes();
-      setBikes(data);
+      const data = await getAllBikes()
+      setBikes(data)
       setIsLoading(false)
-    };
-    fetchData();
-  }, []);
-  if(isLoading) return <p>Cargando...</p>
+    }
+    fetchData()
+  }, [])
+
+  if (isLoading) return <p>Cargando...</p>
+
   return (
-    <div>
-      <h1>Bicicletas</h1>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 auto-cols-max">
+      <h1 className="col-span-full text-xl font-bold mb-4">
+        Listado de Bicicletas
+      </h1>
       {bikes.map((bike) => (
         <div key={bike.id}>
-          <p>{bike.name}</p>
-          <p>{bike.type}</p>
-          <img src="https://picsum.photos/200/300"></img>
+          <BikeCard bike={bike} handleClick={handleNavigation} />
         </div>
       ))}
     </div>
-  );
+  )
 }
