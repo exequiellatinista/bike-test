@@ -1,9 +1,13 @@
 import { useEffect, useState } from 'react'
-import { BikeI } from '../types/BikeI'
-import { getAllBikes } from '../services/getAllBikes'
 import { useNavigate } from 'react-router'
-import { ROUTES } from '../utils/constants/routes'
+
 import { BikeCard } from '../components/Bike/BikeCard'
+
+import { getAllBikes } from '../services/getAllBikes'
+import { ROUTES } from '../utils/constants/routes'
+
+import { BikeI } from '../types/BikeI'
+
 export const Home = () => {
   const [bikes, setBikes] = useState<BikeI[]>([])
   const [isLoading, setIsLoading] = useState(true)

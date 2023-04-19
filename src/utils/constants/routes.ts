@@ -1,4 +1,4 @@
 export const ROUTES = {
   HOME: 'home',
-  BIKE_FORM: 'bike-form'
+  BIKE_FORM: 'bike-form',
 }

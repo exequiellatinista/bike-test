@@ -4,13 +4,13 @@ import { Alert, Snackbar } from '@mui/material'
 
 import { Form } from '../components/BikeForm/Form'
 import { ConfirmModal } from '../components/BikeForm/ConfirmModal'
+import { BikeCard } from '../components/Bike/BikeCard'
 
 import { getPrice } from '../utils/helpers/getPrice'
 import { getBikeById } from '../services/getBikeById'
 
 import { BikeFormI } from '../types/BikeFormI'
 import { BikeI } from '../types/BikeI'
-import { BikeCard } from '../components/Bike/BikeCard'
 
 export const BikeForm = () => {
   const { id } = useParams()

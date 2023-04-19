@@ -1,5 +1,5 @@
 import { BikeI } from '../types/BikeI'
-import bikes from '../utils/bikes.json'
+import bikes from '../utils/mocks/bikes.json'
 
 export const getBikeById = ({
   id,

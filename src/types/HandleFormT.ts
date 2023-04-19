@@ -1,4 +1,4 @@
-import { BikeFormI } from "./BikeFormI";
+import { BikeFormI } from './BikeFormI'
 
 export type HandleFormType = ({
   duration,
