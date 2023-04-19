@@ -1,0 +1,58 @@
+{
+  "list": [
+    {
+      "id": "1",
+      "type": "Electrica",
+      "name": "Modelo A",
+      "img": "https://picsum.photos/200/300"
+    },
+    {
+      "id": "2",
+      "type": "Electrica",
+      "name": "Modelo B",
+      "img": "https://picsum.photos/200/300"
+    },
+    {
+      "id": "3",
+      "type": "Electrica",
+      "name": "Modelo C",
+      "img": "https://picsum.photos/200/300"
+    },
+    {
+      "id": "4",
+      "type": "Normal",
+      "name": "Modelo X",
+      "img": "https://picsum.photos/200/300"
+    },
+    {
+      "id": "5",
+      "type": "Normal",
+      "name": "Modelo Y",
+      "img": "https://picsum.photos/200/300"
+    },
+    {
+      "id": "6",
+      "type": "Normal",
+      "name": "Modelo Z",
+      "img": "https://picsum.photos/200/300"
+    },
+    {
+      "id": "7",
+      "type": "Antigua",
+      "name": "Modelo I",
+      "img": "https://picsum.photos/200/300"
+    },
+    {
+      "id": "8",
+      "type": "Antigua",
+      "name": "Modelo II",
+      "img": "https://picsum.photos/200/300"
+    },
+    {
+      "id": "9",
+      "type": "Antigua",
+      "name": "Modelo III",
+      "img": "https://picsum.photos/200/300"
+    }
+  ]
+}
