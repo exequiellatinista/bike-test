@@ -9,7 +9,7 @@ Clonar este repositorio: git clone https://github.com/exequiellatinista/bike-tes
 
 Instalar dependencias:
 ```bash
-  cd bike-test-app
+  cd bike-test
   yarn install
 ```
 Iniciar la aplicación en modo de desarrollo:
